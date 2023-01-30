@@ -7,7 +7,10 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "clean": "rm -R node_modules",
+    "regenerate": "cd ios; rm -R build; xcodebuild clean; cd ..; bundle install; npx pod-install ios; cd android; ./gradlew clean; cd ..",
+    "build-all": "yarn clean; yarn; yarn regenerate"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.5.3",
