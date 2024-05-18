@@ -1,3 +1,3 @@
-# creativ-react-native-stack
+# stack-react-native
 
-Creativ Mountain - Stack React Native
+Stack React Native
